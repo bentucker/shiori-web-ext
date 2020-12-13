@@ -26,7 +26,7 @@ async function logout(server, session) {
     // Create logout url
     var logoutURL = "";
     try {
-        logoutURL = new URL("/api/logout", server);
+        logoutURL = new URL("api/logout", server);
     } catch(err) {
         throw new Error(`${server} is not a valid url`);
     }
@@ -64,7 +64,7 @@ async function login(server, username, password) {
     // Create login URL
     var loginURL = "";
     try {
-        loginURL = new URL("/api/login", server);
+        loginURL = new URL("api/login", server);
     } catch(err) {
         throw new Error(`${server} is not a valid url`);
     }
